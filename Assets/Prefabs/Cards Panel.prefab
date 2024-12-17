@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8779925652090181350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8779925652090181351}
+  - component: {fileID: 8779925652090181354}
+  - component: {fileID: 8779925652090181355}
+  - component: {fileID: 8779925652090181352}
+  - component: {fileID: 8779925652090181348}
+  - component: {fileID: 8779925652090181349}
+  - component: {fileID: 2067127595}
+  m_Layer: 5
+  m_Name: Cards Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8779925652090181351
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.3682251, y: 0.20172119}
+  m_SizeDelta: {x: 1441.56, y: 811.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8779925652090181354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00c2396743d6a54dad37ff255038a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelData:
+  - {fileID: 11400000, guid: 605142a67efff00409c9d56a4aa2181b, type: 2}
+  - {fileID: 11400000, guid: 60f7ed996ed3aab4480aa41152c17823, type: 2}
+  - {fileID: 11400000, guid: 2c9b7da6d3943c044a1e9d98f5ed8171, type: 2}
+  _grid: {fileID: 8779925652090181348}
+  _addNewCard: {fileID: 8779925652090181355}
+  _restartGame: {fileID: 0}
+--- !u!114 &8779925652090181355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acced6d0477ac534e8d6e4530ed035ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cardPanel: {fileID: 8779925652090181350}
+  _cardPrefab: {fileID: 7826366134151707016, guid: 1d155ddcf39940243a810ebe46171b03, type: 3}
+  _taskManager: {fileID: 8779925652090181352}
+  _cardEffects: {fileID: 2067127595}
+--- !u!114 &8779925652090181352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05840354f5f0aef4383abb9851f7d3aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _taskText: {fileID: 0}
+  _fadeEffect: {fileID: 0}
+  _particleSystem: {fileID: 0}
+  _cardEffects: {fileID: 2067127595}
+--- !u!114 &8779925652090181348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 50, y: 50}
+  m_Constraint: 0
+  m_ConstraintCount: 4
+--- !u!222 &8779925652090181349
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_CullTransparentMesh: 1
+--- !u!114 &2067127595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779925652090181350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc875e597f1ec1b4da6106407400e5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
